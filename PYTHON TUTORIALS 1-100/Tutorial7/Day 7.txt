@@ -1,0 +1,12 @@
+Operator:
+            Python divides the operators in the following groups:
+
+            Arithmetic operators
+            Assignment operators
+            Comparison operators
+            Logical operators
+            Identity operators
+            Membership operators
+            Bitwise operators
+
+Q. Write a python program to calculate the sum, diiference and other typeof operation

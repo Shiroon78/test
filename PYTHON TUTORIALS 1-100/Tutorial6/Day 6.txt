@@ -1,0 +1,8 @@
+Data Types in Python:
+                    Python has several built-in data types, 
+    including numeric types (int, float, complex), string (str), boolean (bool), 
+    and collection types (list, tuple, dict, set). Each data type has its own set of properties, methods, 
+    and behaviors that allow programmers to manipulate and process data effectively in their programs.
+
+Variable: 
+         a reserved memory location to store values

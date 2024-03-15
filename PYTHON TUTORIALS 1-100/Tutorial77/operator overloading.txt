@@ -1,0 +1,22 @@
+In Python, you can overload operators by defining special methods for them in a class. These methods are called when an object of that class is used with a particular operator.
+
+For example, if you want to define an addition operator for your class, you can define a `__add__` method. This method will be called when an object of your class is added to another object or a number.
+
+Here is an example:
+
+```python
+class MyClass:
+    def __init__(self, x):
+        self.x = x
+    
+    def __add__(self, other):
+        return MyClass(self.x + other.x)
+
+a = MyClass(10)
+b = MyClass(20)
+c = a + b # c will be MyClass(30)
+```
+
+In this example, we define a `MyClass` class with an `__init__` method to initialize an instance of the class with a value `x`. We also define a `__add__` method that takes another `MyClass` object as an argument and returns a new `MyClass` object with the sum of the `x` values.
+
+We can now use our `MyClass` object with the addition operator, and the `__add__` method will be called to perform the addition.

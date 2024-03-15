@@ -1,0 +1,9 @@
+Python Local Variables:
+        Local variables in Python are those which are initialized 
+        inside a function and belong only to that particular function.
+        It cannot be accessed anywhere outside the function.
+
+Python Global Variables
+        These are those which are defined outside any function and which are
+        accessible throughout the program,
+        i.e., inside and outside of every function.

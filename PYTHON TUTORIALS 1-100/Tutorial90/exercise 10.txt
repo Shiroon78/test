@@ -1,0 +1,34 @@
+Exercise 10
+Use the news APi and requests module to fethtch the daily news replated to different topics
+Go to http://newsapi.org/ and explor the various options to build your application
+
+
+
+ ////// Solution \\\\\\\\
+This code fetches news articles related to a given topic using the News API. Here's a step-by-step explanation:
+
+The code begins by importing the requests module, which is a widely used library for making HTTP requests.
+
+Next, there is a function defined called fetch_news_articles that takes two parameters: topic and api_key. This function will be responsible for fetching the news articles.
+
+Inside the function, a variable named url is assigned the value 'https://newsapi.org/v2/everything'. This is the endpoint URL for the News API.
+
+Another variable named params is created, which is a dictionary containing the query parameter values for the API request. In this case, the two parameters used are 'q', which represents the query topic, and 'apiKey', which represents the API key required for authentication.
+
+The requests.get() function is called with the url and params as arguments to send an HTTP GET request to the News API.
+
+The response from the API is stored in the response variable.
+
+The code then checks if the response status code is equal to 200, which indicates a successful request.
+
+If the status code is 200, it means the request was successful and the code proceeds to extract the articles from the JSON response using response.json()['articles'] and returns them.
+
+If the status code is not 200, an error message is printed along with the status code, and an empty list is returned.
+
+Outside the function, an API key and a topic are defined.
+
+The fetch_news_articles function is called with the topic and API key as arguments, and the result is stored in the articles variable.
+
+Finally, a loop is used to iterate over the fetched articles. For each article, the title, URL, and description are printed.
+
+In summary, this code fetches news articles using the News API by making an HTTP request with the given topic and API key as parameters. If the request is successful, it returns a list of articles, and if there is an error, it prints an error message and returns an empty list.

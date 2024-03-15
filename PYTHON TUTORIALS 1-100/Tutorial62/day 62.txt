@@ -1,0 +1,37 @@
+In object-oriented programming,
+ an access modifier is a declaration that defines the visibility of members
+  a  (fields, methods, etc.) of a class or its subclasses. 
+  Access modifiers are used to control how code is organized 
+nd to ensure that members are accessible only by those who should have access to them.
+
+
+In Python, there are four access specifiers that can be used to control the visibility of class members and methods:
+
+1.
+public: Members and methods with this access level can be accessed from anywhere.
+2.
+protected: Members and methods with this access level can be accessed from within the class and its subclasses.
+3.
+private: Members and methods with this access level can only be accessed from within the class itself.
+4.
+private_method: This is a special type of method access that can only be accessed from within the class it is defined in.
+
+
+Here's an example of a class with different access levels:
+class Example:
+    def __init__(self):
+        self._private_variable = 100
+
+    def public_method(self):
+        print("This is a public method")
+
+    def _protected_method(self):
+        print("This is a protected method")
+
+    def __private_method(self):
+        print("This is a private method")
+
+    def another_private_method(self):
+        self.__private_method()
+
+In this example, the public_method can be accessed from outside the class, while the _protected_method and __private_method can only be accessed from within the class or its subclasses. The another_private_method uses the self.__private_method() syntax to access the private method from within the class.

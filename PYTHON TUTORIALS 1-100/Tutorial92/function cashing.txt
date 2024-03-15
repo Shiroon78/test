@@ -1,0 +1,22 @@
+In Python, function caching is a technique used to store the output of a function in memory for faster access in the future. This can be useful when the function is called with the same arguments multiple times, as it can avoid recomputing the result.
+
+To cache the output of a function in Python, you can use the functools.lru_cache decorator. This decorator takes a maxsize argument, which specifies the maximum number of items to cache. When the cache reaches its capacity, the least recently used items are removed.
+
+Here's an example of a function that is cached using functools.lru_cache:
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+
+In this example, the fib function is decorated with lru_cache, which sets the maximum cache size to 128. The fib function is then memoized, which means that its output is stored in memory for future calls with the same arguments.
+
+To use the memoized fib function, you can simply call it like you would any other function:
+fib(6) # Returns 8
+fib(6) # Returns 8 from cache
+
+Note that the output of the function will only be stored in the cache if the arguments are hashable, which means that they can be used as keys in a dictionary. If the arguments are not hashable, the function will still be executed, but its output will not be cached.
+
+Overall, function caching in Python can be a useful optimization technique for speeding up repeated function calls.

@@ -1,0 +1,11 @@
+hybrid and heirachical ineitance
+
+hybrid inheritance is a combination of multiple inheritance and multiple implementation inheritance.
+
+In hybrid inheritance, multiple base classes are combined to form a new class. The new class inherits the properties and methods of all the base classes.
+
+In heirachical inheritance, the base class is inherited by a derived class. The derived class inherits the properties and methods of the base class, and can also add new properties and methods of its own.
+
+In heirachical inheritance, the object is created based on the class hierarchy. The object will have the properties and methods of the base class, and can also have properties and methods specific to the derived class.
+
+In summary, hybrid inheritance combines multiple base classes, while heirachical inheritance is a chain of inheritance where a derived class inherits from a base class.

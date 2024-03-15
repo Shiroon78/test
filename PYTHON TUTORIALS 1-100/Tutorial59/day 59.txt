@@ -1,0 +1,19 @@
+A decorator is a function that takes another function as an argument and returns a new function. In Python,decorators are defined using the @ symbol.
+
+Here is a simple example of a decorator that prints the execution time of a function:
+def time_it(fn):
+    def wrapper():
+        start_time = time.time()
+        fn()
+        end_time = time.time()
+        print(f"Function took {end_time - start_time} seconds to execute")
+    return wrapper
+
+@time_it
+def my_function():
+    time.sleep(2)
+
+my_function()
+In the example above, the time_it decorator is defined using the def keyword. The time_it function takes a function as an argument and returns a new function. The wrapper function wraps the original function and measures the execution time of the function using the time.time() function.
+
+The @ symbol is used to apply the time_it decorator to the my_function function. When the my_function is called, the wrapper function is executed, which measures the execution time of the my_function and prints it to the console

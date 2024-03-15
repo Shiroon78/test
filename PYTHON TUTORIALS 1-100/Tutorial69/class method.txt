@@ -1,0 +1,20 @@
+
+A class method is a method that is bound to a class and not to an instance of the class.
+It is defined using the @classmethod decorator, which takes a function and transforms it into a class method.
+When you call a class method, the first argument is always cls, which represents the class itself and not an instance of the class.
+Class methods can access class-level attributes and methods without having to create an instance of the class.
+Class methods are often used for tasks that are common to all instances of a class, such as initializing the class, calculating a class-wide result, or performing operations on the class itself.
+In some cases, class methods can be used as a substitute for static methods in other languages.
+
+
+, here's an example of a class method in Python:
+class ExampleClass:
+    @classmethod
+    def class_method(cls):
+        print(f"Hello from {cls.__name__}")
+
+ExampleClass.class_method()
+
+In this example, class_method is a class method because it is defined using the @classmethod decorator. The decorator takes a function and transforms it into a class method.
+
+When you call class_method(), it will first look for the current instance of the class (self) and then move up the class hierarchy to find the class itself (cls). This allows you to access class-level attributes and methods without having to create an instance of the class.

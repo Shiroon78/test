@@ -1,0 +1,24 @@
+The walrus operator, also known as the assignment expression, was introduced in Python 3.8. It is denoted by the := symbol. This operator allows you to assign a value to a variable as part of an expression.
+
+Here's an example to help illustrate its usage:
+
+python
+
+# Example 1: Simple assignment
+x = 5
+print(x)  # Output: 5
+
+# Example 2: Walrus operator
+if (x := 10) > 5:
+    print(x)  # Output: 10
+
+# Example 3: Using walrus operator in a while loop
+while (user_input := input("Enter 'quit' to exit: ")) != 'quit':
+    print("You entered:", user_input)
+In Example 2, the walrus operator assigns the value 10 to the variable x and then checks if x is greater than 5. Since 10 is indeed greater than 5, the print() statement is executed.
+
+In Example 3, the walrus operator is used in a while loop to continuously prompt the user to enter some input until they type 'quit'.
+
+The walrus operator can be particularly useful in cases where you want to avoid duplicating code or when you want to improve the readability of your code by keeping the assignment and condition in one line.
+
+However, it's important to use the walrus operator judiciously and not overuse it, as it can lead to less readable code if used excessively.

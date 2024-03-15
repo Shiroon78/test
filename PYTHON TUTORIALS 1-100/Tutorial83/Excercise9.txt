@@ -1,0 +1,8 @@
+Write a program to pronounce list of names using win32 api. If you are a list l as follows:
+
+l = ["Rabul","Licaa","Angel"]
+
+Your progsm should pronounce 
+Shoutout to Rahul
+Shoutout to Licaa
+Shoutout to Angel

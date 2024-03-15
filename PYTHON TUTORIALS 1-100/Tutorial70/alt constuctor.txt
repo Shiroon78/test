@@ -1,0 +1,2 @@
+
+Yes, that's correct. The classmethod decorator can be used as an alternative constructor in cases where you want to create a class instance without having to instantiate the class itself. In the example code you provided, the fromStr classmethod is used to create a new instance of the Employee class without having to instantiate the class directly
