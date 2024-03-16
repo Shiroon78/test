@@ -1,1 +1,0 @@
-Write a python program which reminds you about drinking water eveery 2 hour.. your program can either beep or send destop notification

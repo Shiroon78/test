@@ -1,9 +1,0 @@
-Comments: Comments in Python are identified with a hash symbol, #, and extend to the end of the line
-          Comment can be wrtten using #
-          Multi line symbol can be written inside triple quoe (""" """)
-          
-Escape Sequence Character: An escape character is a backslash \ followed by the character you want to insert.
-
-Print Statement: The print() function prints the specified message to the screen, or other standard output device. 
-The message can be a string, or any other object, the object will be converted into a string before written to the screen.
-

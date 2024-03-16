@@ -1,9 +1,0 @@
-Self Parameter
-
-
-The self parameter in Python is a convention used for indicating the instance of the class to which a method belongs. In the code you provided, self refers to the instance of the Person class.
-
-In Python, you don't have to explicitly declare the self parameter in a method, but it is a common practice to do so for clarity and to make the code more consistent.
-
-So, in the code you provided, self is a reference to the instance of the Person class, and it can be used to access the instance's attributes and methods. For example, in the info method, self.name refers to the name attribute of the instance, and self.occupation refers to the occupation attribute.
-
